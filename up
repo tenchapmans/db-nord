@@ -55,6 +55,7 @@ blueberry-tray &
 volumeicon &
 run xfce4-clipman
 autokey &
+ntfd &
 #conky -c ~/.config/leftwm/system-overview &
 #nitrogen --restore &
 #caffeine &

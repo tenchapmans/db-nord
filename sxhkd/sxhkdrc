@@ -8,11 +8,11 @@
 
 # Vivaldi
 super + F1
-	vivaldi-stable
+	firefox
 
 # Atom
 super + F2
-	atom
+	codium
 
 #Inkscape
 super + F3
@@ -36,7 +36,7 @@ super + F7
 
 #Thunar
 super + F8
-    thunar
+    spacefm
 
 #Evolution
 super + F9
@@ -60,11 +60,11 @@ super + F12
 
 #Atom
 super + e
-    atom
+    codium
 
 #Browser
 super + w
-    vivaldi-stable
+    firefox
 
 #Conky-toggle
 super + c
@@ -72,15 +72,15 @@ super + c
 
 #Htop
 super + h
-    urxvt -e htop
+    kitty -e htop
 
 #Rofi theme selector
 super + r
-    rofi-theme-selector
+    rofi -show drun
 
-#Urxvt
+#kitty
 super + t
-    urxvt
+    kitty
 
 #Pavucontrol
 super + v
@@ -90,18 +90,13 @@ super + v
 super + m
     pragha
 
-#urxvt
+#alacritty
 super + Return
-    urxvt
+    alacritty
 
 #Xkill
 super + Escape
     xkill
-
-#Keyboard dependent
-#urxvt
-super + KP_Enter
-	urxvt
 
 #################################################################
 # SUPER + SHIFT KEYS
@@ -109,12 +104,7 @@ super + KP_Enter
 
 #File-Manager
 super + shift + Return
-	thunar
-
-#Keyboard dependent
-#File-Manager
-#super + shift + KP_Enter
-#	thunar
+	spacefm
 
 #dmenu
 super + shift + d
@@ -123,10 +113,6 @@ super + shift + d
 #reload sxhkd:
 super + shift + s
 	pkill -USR1 -x sxhkd
-
-#Keyboard dependent
-#super + shift + KP_Enter
-#	thunar
 
 
 #################################################################
@@ -151,7 +137,7 @@ ctrl + alt + Prior
 
 #File-Manager
 ctrl + alt + b
-     thunar
+     spacefm
 
 #Catfish
 ctrl + alt + c
@@ -311,9 +297,9 @@ ctrl + shift + Escape
 #     SCREENSHOTS
 #################################################################
 
-#Scrot
+#flameshot
 Print
-    scrot 'ArcoLinux-%Y-%m-%d-%s_screenshot_$wx$h.jpg' -e 'mv $f $$(xdg-user-dir PICTURES)'
+    flameshot gui
 
 #screenshooter
 ctrl + Print
@@ -323,9 +309,9 @@ ctrl + Print
 ctrl + shift + Print
      gnome-screenshot -i
 
-#Flameshot
+#Scrot
 super + ctrl + Print
-    flameshot gui
+    scrot 'ArcoLinux-%Y-%m-%d-%s_screenshot_$wx$h.jpg' -e 'mv $f $$(xdg-user-dir PICTURES)'
 
 #################################################################
 #     MULTIMEDIA KEYS
